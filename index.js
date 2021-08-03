@@ -24,9 +24,7 @@ client.on("message", (msg) => {
   client.channels.cache.get("871826931392323676").send(msg)
 })
 
-client.on("messageReactionAdd", (reaction, user) => {
-    console.log(reaction)
-    }
-  )
+client.on('messageReactionAdd', (reaction, user) => {
+  console.log(reaction, user)
+})
 
-// DM queue channel = 837059946352869456
